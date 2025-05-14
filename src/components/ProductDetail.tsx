@@ -46,9 +46,9 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ isOpen, onClose, product 
   
   // Mock customer reviews - we'll add state to make this dynamic
   const [reviews, setReviews] = useState<Review[]>([
-    { id: 1, username: 'PetLover123', rating: 5, comment: 'My dog loves this! Great quality product.' },
-    { id: 2, username: 'CatMom', rating: 4, comment: 'Good value for money, my cat is very happy.' },
-    { id: 3, username: 'DogDad42', rating: 5, comment: 'Excellent product, highly recommend!' },
+    { id: 1, username: 'PetLover123', rating: 5, comment: 'My pet loves this! Great quality product.' },
+    { id: 2, username: 'CatMom', rating: 4, comment: 'Good value for money, my pet is very happy.' },
+    { id: 3, username: 'DogDad42', rating: 5, comment: 'Excellent product, highly recommended!' },
   ]);
 
   const handleAddReview = () => {
