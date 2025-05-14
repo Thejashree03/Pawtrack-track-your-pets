@@ -94,7 +94,7 @@ const Cart: React.FC = () => {
           </div>
           
           <Button asChild className="w-full bg-black hover:bg-gray-800 text-white">
-            <Link to="/products">Continue Shopping/</Link>
+             <Link to="/Products">Continue Shopping</Link>
           </Button>
         </div>
       ) : (
