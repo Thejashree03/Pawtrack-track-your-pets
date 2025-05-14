@@ -7,7 +7,7 @@ import { toast } from 'sonner';
 import { useCart } from '@/context/CartContext';
 import CheckoutAddressForm from '@/components/CheckoutAddressForm';
 import CashOnDeliveryPayment from '@/components/CashOnDeliveryPayment';
-
+import { Link } from 'react-router-dom';
 const Cart: React.FC = () => {
   const { cartItems, removeFromCart, clearCart, updateItemQuantity } = useCart();
   const [isAddressFormOpen, setIsAddressFormOpen] = useState(false);
@@ -94,7 +94,7 @@ const Cart: React.FC = () => {
           </div>
           
           <Button asChild className="w-full bg-black hover:bg-gray-800 text-white">
-            <a href="/products">Continue Shopping</a>
+            <Link to="/products">Continue Shopping/</Link>
           </Button>
         </div>
       ) : (
